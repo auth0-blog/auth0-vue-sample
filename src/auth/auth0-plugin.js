@@ -64,6 +64,7 @@ export const useAuth0 = ({
 
     async created() {
       this.auth0Client = await createAuth0Client({
+        ...pluginOptions,
         domain: pluginOptions.domain,
         client_id: pluginOptions.clientId,
         audience: pluginOptions.audience,
