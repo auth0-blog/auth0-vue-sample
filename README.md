@@ -159,7 +159,7 @@ Populate this `auth0-express-sample/.env` file as follows:
 SERVER_PORT=6060
 CLIENT_ORIGIN_URL=http://localhost:4040
 AUTH0_AUDIENCE=
-AUTH0_ISSUER_URL=
+AUTH0_DOMAIN=
 ```
 
 Head back to your Auth0 API page, and **follow these steps to get the Auth0 Audience**:
