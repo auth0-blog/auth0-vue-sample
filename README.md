@@ -147,13 +147,13 @@ With these values in place, hit the "Create" button.
 
 Keep this page open as you'll be using the values next.
 
-Create a `.env` file for the API Server under the `auth0-express-sample` directory:
+Create a `.env` file for the API Server under the `auth0-express-js-sample` directory:
 
 ```bash
 touch .env
 ```
 
-Populate this `auth0-express-sample/.env` file as follows:
+Populate this `auth0-express-js-sample/.env` file as follows:
 
 ```bash
 SERVER_PORT=6060
