@@ -166,16 +166,16 @@ Head back to your Auth0 API page, and **follow these steps to get the Auth0 Audi
 
 ![Get the Auth0 Audience to configure an API](https://cdn.auth0.com/blog/complete-guide-to-user-authentication/get-the-auth0-audience.png)
 
-1. Click on the ** "Settings"** tab.
+1. Click on the **"Settings"** tab.
 
-2. Locate the ** "Identifier"** field and copy its value.
+2. Locate the **"Identifier"** field and copy its value.
 
 3. Paste the "Identifier" value as the value of `AUTH0_AUDIENCE` in `.env`.
 
 Now, **follow these steps to get the Auth0 Domain value**:
 
-1. Click on the ** "Test"** tab.
-2. Locate the section called **" Asking Auth0 for tokens from my application"**.
+1. Click on the **"Test"** tab.
+2. Locate the section called **"Asking Auth0 for tokens from my application"**.
 3. Click on the **cURL** tab to show a mock `POST` request.
 4. Copy your Auth0 domain, which is _part_ of the `--url` parameter value: `tenant-name.region.auth0.com`.
 5. Paste the Auth0 domain value as the value of `AUTH0_DOMAIN` in `.env`.
