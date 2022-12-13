@@ -3,7 +3,7 @@
  */
 
 import Vue from "vue";
-import createAuth0Client from "@auth0/auth0-spa-js";
+import { createAuth0Client } from "@auth0/auth0-spa-js";
 
 /**
  *  Vue Instance Definition
@@ -64,11 +64,12 @@ export const useAuth0 = ({
 
     async created() {
       this.auth0Client = await createAuth0Client({
-        ...pluginOptions,
         domain: pluginOptions.domain,
-        client_id: pluginOptions.clientId,
-        audience: pluginOptions.audience,
-        redirect_uri: redirectUri,
+        clientId: pluginOptions.clientId,
+        authorizationParams: {
+          audience: pluginOptions.audience,
+          redirect_uri: redirectUri,
+        },
       });
 
       try {

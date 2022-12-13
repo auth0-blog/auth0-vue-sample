@@ -14,7 +14,9 @@ export default {
   methods: {
     signup() {
       this.$auth.loginWithRedirect({
-        screen_hint: "signup",
+        authorizationParams: {
+          screen_hint: "signup",
+        },
       });
     },
   },
